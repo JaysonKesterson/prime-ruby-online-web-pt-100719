@@ -1,10 +1,6 @@
 # Add  code here!
 def prime?(number)
   
-  if number == 2
-    return true
-  end
-  
   if number < 2
     return false
   end
@@ -15,16 +11,10 @@ def prime?(number)
   boolean = nil
   
   while count < highnum do
-   range << count
-   count += 1
-  end
-  
-  range.each do |num|
-    if number % num == 0
-      boolean = false
-    else
-      boolean = true
+    if number % count == 0
+      return false
     end
+    count += 1
   end
-  boolean
+  return true
 end
