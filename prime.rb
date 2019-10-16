@@ -1,7 +1,7 @@
 # Add  code here!
 def prime?(number)
   
-  if number < 2
+  if number < 2 || number == 4
     return false
   end
   
@@ -15,7 +15,6 @@ def prime?(number)
       return false
     end
     count += 1
-    highnum = number / count
   end
   return true
 end
