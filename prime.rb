@@ -15,6 +15,7 @@ def prime?(number)
       return false
     end
     count += 1
+    highnum = number / count
   end
   return true
 end
